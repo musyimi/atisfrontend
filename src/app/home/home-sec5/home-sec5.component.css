@@ -1,0 +1,14 @@
+.sec5 {
+    margin-top: 10px;
+    
+}
+.cardL {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+@media (min-width: 768px) {
+    .sec5 {
+        margin-top: 30px;
+    }
+}
