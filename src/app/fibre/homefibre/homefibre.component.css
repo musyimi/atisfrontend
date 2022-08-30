@@ -1,0 +1,10 @@
+.hero {
+    position: absolute;
+    font-size: 50px;
+    margin-top: 150px;
+    margin-left: 50px;
+    color: beige;
+}
+.top {
+    margin-top: 20px;
+}

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fibre.component.css']
 })
 export class FibreComponent implements OnInit {
+ 
 
   constructor() { }
 

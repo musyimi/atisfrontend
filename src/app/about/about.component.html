@@ -1,1 +1,27 @@
-<p>about works!</p>
+<div class="row border " *ngFor="let hero of heroes">
+    <span class="hero">{{ hero.title }}</span>
+    <div class="col-xs-12">
+        <span >
+            <img [src]="hero.imagePath" class="img-responsive" alt="{{ hero.title }}" style="max-height: 500px; width: 100%;">
+        </span>
+    </div>
+</div>
+<div class="row border up " *ngFor="let content of contents">
+    <div class="top">
+        <span class="title">{{ content.title }}</span>
+        <hr>
+        <div class="col-xs-12">
+            <p class="desc text-center">{{content.description}}</p>
+        </div>
+    </div>
+</div>
+<div class="row border up" *ngFor="let contents of content1">
+    <div class="top">
+        <span class="title">{{ contents.title }}</span>
+        <hr>
+        <div class="col-xs-12">
+            <p class="desc text-center">{{contents.description}}</p>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

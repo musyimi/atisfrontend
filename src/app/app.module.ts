@@ -18,6 +18,34 @@ import { HomeSec6Component } from './home/home-sec6/home-sec6.component';
 import { HomeSec7Component } from './home/home-sec7/home-sec7.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { ConnectComponent } from './fibre/connect/connect.component';
+import { FibrecomponentComponent } from './fibre/fibrecomponent/fibrecomponent.component';
+import { HomefibreComponent } from './fibre/homefibre/homefibre.component';
+import { SecureComponent } from './fibre/secure/secure.component';
+import { LteComponent } from './fibre/lte/lte.component';
+import { EntertainmentComponent } from './fibre/entertainment/entertainment.component';
+import { CctvComponent } from './fibre/cctv/cctv.component';
+import { IotComponent } from './fibre/iot/iot.component';
+
+const appRoutes : Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'fibre', component: FibreComponent },
+  { path: 'contactus', component: ContactComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'getconnected', component: ConnectComponent },
+  { path: 'homefibre', component: HomefibreComponent },
+  { path: 'securenet', component: SecureComponent },
+  { path: 'lte', component: LteComponent },
+  { path: 'entertainment', component: EntertainmentComponent },
+  { path: 'homecctv', component: CctvComponent },
+  { path: 'iot', component: IotComponent }
+  
+
+];
 
 @NgModule({
   declarations: [
@@ -37,10 +65,20 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HomeSec6Component,
     HomeSec7Component,
     FooterComponent,
+    LoginComponent,
+    ConnectComponent,
+    FibrecomponentComponent,
+    HomefibreComponent,
+    SecureComponent,
+    LteComponent,
+    EntertainmentComponent,
+    CctvComponent,
+    IotComponent,
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
