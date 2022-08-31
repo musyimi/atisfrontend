@@ -30,6 +30,15 @@ import { CctvComponent } from './fibre/cctv/cctv.component';
 import { IotComponent } from './fibre/iot/iot.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DedicatedComponent } from './services/dedicated/dedicated.component';
+import { EthernetComponent } from './services/ethernet/ethernet.component';
+import { EdgeComponent } from './services/edge/edge.component';
+import { BroadbandComponent } from './services/broadband/broadband.component';
+import { CloudComponent } from './services/cloud/cloud.component';
+import { HybridComponent } from './services/hybrid/hybrid.component';
+import { WildixComponent } from './services/wildix/wildix.component';
+import { CustomerComponent } from './services/customer/customer.component';
+import { FieldComponent } from './services/field/field.component';
 
 
 const appRoutes : Routes = [
@@ -45,7 +54,16 @@ const appRoutes : Routes = [
   { path: 'lte', component: LteComponent },
   { path: 'entertainment', component: EntertainmentComponent },
   { path: 'homecctv', component: CctvComponent },
-  { path: 'iot', component: IotComponent }
+  { path: 'iot', component: IotComponent },
+  { path: 'broadband', component: BroadbandComponent },
+  { path: 'dedicatedcloudconnection', component: CloudComponent },
+  { path: 'customerpremises', component: CustomerComponent },
+  { path: 'dedicatedinternetaccess', component: DedicatedComponent },
+  { path: 'edge', component: EdgeComponent },
+  { path: 'ethernet', component: EthernetComponent },
+  { path: 'fieldservice', component: FieldComponent },
+  { path: 'hybriddynamics', component: HybridComponent },
+  { path: 'wildix', component: WildixComponent }
   
 
 ];
@@ -77,6 +95,15 @@ const appRoutes : Routes = [
     EntertainmentComponent,
     CctvComponent,
     IotComponent,
+    DedicatedComponent,
+    EthernetComponent,
+    EdgeComponent,
+    BroadbandComponent,
+    CloudComponent,
+    HybridComponent,
+    WildixComponent,
+    CustomerComponent,
+    FieldComponent,
  
     
   ],
