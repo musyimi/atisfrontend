@@ -28,6 +28,9 @@ import { LteComponent } from './fibre/lte/lte.component';
 import { EntertainmentComponent } from './fibre/entertainment/entertainment.component';
 import { CctvComponent } from './fibre/cctv/cctv.component';
 import { IotComponent } from './fibre/iot/iot.component';
+import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 const appRoutes : Routes = [
   { path: '', component: HomeComponent },
@@ -74,10 +77,14 @@ const appRoutes : Routes = [
     EntertainmentComponent,
     CctvComponent,
     IotComponent,
+ 
+    
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
+    FormsModule,
+    NgbModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

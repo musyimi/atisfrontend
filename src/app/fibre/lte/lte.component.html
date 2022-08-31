@@ -3,11 +3,31 @@
     <div class="row top" *ngFor="let hero of heroes">
         <span class="hero">{{ hero.title }}</span>
         <div class="col-xs-12">
-            <span >
-                <img [src]="hero.imagePath" class="img-responsive" alt="{{ hero.title }}" style="max-height: 500px; width: 100%;">
+            <span>
+                <img [src]="hero.imagePath" class="img-responsive" alt="{{ hero.title }}"
+                    style="max-height: 500px; width: 100%;">
             </span>
+        </div>
+    </div>
+    <div class="row sec1">
+        <div class="col-md-12 tank1 ">
+            <div class="tank">
+                <span class="title">Private LTE</span>
+                <hr />
+                <p class="text-center">
+                    In large areas where organizations have essential connected devices and applications, wireless
+                    connectivity is a challenge. Wi-Fi isn’t secure enough and doesn’t scale well, but public LTE might
+                    not provide the dedicated bandwidth or cost-effectiveness you need. Private Cellular Networks,
+                    including Private LTE (PLTE), have emerged as the best option for wireless networking in sprawling
+                    spaces ranging from campuses, shipping ports, and refineries to Smart Cities. In these “wide-area
+                    LAN” scenarios, Private LTE combines the control and fixed costs of a private network with the
+                    flexibility, security, and macro-network benefits of cellular broadband — with a built-in pathway to
+                    Private 5G.
+
+                </p>
+            </div>
+
         </div>
     </div>
     <app-footer></app-footer>
 </div>
-

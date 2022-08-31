@@ -8,3 +8,20 @@
 .top {
     margin-top: 20px;
 }
+.package {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.header {
+    text-align: center;
+    font-weight: bold;
+}
+.title {
+    text-align: center;
+}
+.list {
+    list-style-type: none;
+    font-size: small;
+   
+}

@@ -8,3 +8,23 @@
 .top {
     margin-top: 20px;
 }
+
+.package {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.header {
+    text-align: center;
+    font-weight: bold;
+}
+.whole {
+    padding: 10px;
+}
+.list {
+    font-size: small;
+   
+}
+.card {
+    padding: 10px;
+}

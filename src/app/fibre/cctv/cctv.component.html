@@ -3,9 +3,27 @@
     <div class="row top" *ngFor="let hero of heroes">
         <span class="hero">{{ hero.title }}</span>
         <div class="col-xs-12">
-            <span >
-                <img [src]="hero.imagePath" class="img-responsive" alt="{{ hero.title }}" style="max-height: 500px; width: 100%;">
+            <span>
+                <img [src]="hero.imagePath" class="img-responsive" alt="{{ hero.title }}"
+                    style="max-height: 500px; width: 100%;">
             </span>
+        </div>
+    </div>
+    <div class="row sec1">
+        <div class="col-md-12 tank1 ">
+            <div class="tank">
+                <span class="title">Smart Home</span>
+                <hr />
+                <p class="text-center">
+                    Home automation gives you access to control devices in your home from a mobile device anywhere in
+                    the world. The term may be used for isolated programmable devices, like thermostats and sprinkler
+                    systems, but home automation more accurately describes homes in which nearly everything — lights,
+                    appliances, electrical outlets, heating and cooling systems — are hooked up to a remotely
+                    controllable network.
+
+                </p>
+            </div>
+
         </div>
     </div>
     <app-footer></app-footer>

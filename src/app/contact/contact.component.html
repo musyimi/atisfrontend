@@ -1,1 +1,63 @@
+<div class="contact-form">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div ngModelGroup="contactData" #contactData="ngModelGroup">
+             <!-- Name input -->
+                <div class="row col-lg-6 col-md-12 col-md-12">
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form4Example1">Name</label>
+                    <input 
+                        type="text" 
+                        id="form4Example1" 
+                        class="form-control" 
+                        ngModel
+                        name="username"
+                        required
+                        > 
+                            
+                    </div>
+                </div>
+  
+           <!-- Email input -->
+                <div class="row col-lg-6 col-md-12 col-md-12">
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form4Example2">Email address</label>
+                        <input type="email"
+                        id="form4Example2"
+                        class="form-control" 
+                        ngModel
+                        name="email"
+                        required
+                        email
+                        #email="ngModel"/>
+                        <span class="helper-block" *ngIf="!email.valid && email.touched">Please Enter A Valid Email</span>
+                    </div>
+                </div>
+        
+      
+           <!-- Message input -->
+                <div class="row col-lg-6 col-md-12 col-md-12 ">
+                    <div class="form-outline mb-4">
+                        <label class="form-label" for="form4Example3">Message</label>
+                        <textarea 
+                        class="form-control" 
+                        id="form4Example3" 
+                        rows="4"
+                        ngModel
+                        name="message"
+                        required></textarea>
+                        
+                    </div>
+                
+                </div>
+                <p *ngIf="!contactData.valid && contactData.touched" >User data is invalid!</p>
+        </div>
+       
+      
+        <!-- Submit button -->
+        <button 
+          type="submit" 
+          class="btn btn-primary btn-block mb-4"
+          [disabled]="!f.valid">Send</button>
+    </form>
+</div>
 <app-footer></app-footer>
