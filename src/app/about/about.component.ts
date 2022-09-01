@@ -11,7 +11,7 @@ import { Content1 } from '../content1.model';
 export class AboutComponent implements OnInit {
 
   heroes: Hero[] = [
-    new Hero('Get to know us', 'https://images.unsplash.com/photo-1598550487031-0898b4852123?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaG5vbG9neSUyMHNldHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60')
+    new Hero('Get to know us', 'https://images.unsplash.com/photo-1572025442646-866d16c84a54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')
   ];
 
   contents: Content[] = [
