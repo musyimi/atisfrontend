@@ -1,1 +1,82 @@
+<div class="row " *ngFor="let hero of heroes">
+    <span class="hero">{{ hero.title }}</span>
+    <div class="col-xs-12">
+        <span>
+            <img [src]="hero.imagePath" class="img-responsive" alt="{{ hero.title }}"
+                style="max-height: 500px; width: 100%;">
+        </span>
+    </div>
+</div>
+
+<div class="row border rounded sec1">
+    <div class="col-md-12 tank1 ">
+        <div class="tank">
+            <span class="sub1">Business grade connection with class leading reliability</span>
+            <hr />
+            <p class="text-center">
+
+                Atis telcom broadband internet fits your business needs. We offer asymmetrical access through several
+                technologies such as fiber optics, coaxial cable modem and wireless links. This is a cost-effective and
+                simple service that can be used as a backup to dedicated services or as a primary solution for small
+                offices or non-critical locations.
+
+
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row first">
+        <div class="col-lg-5 border">
+            <div class="card-body body">
+                <p>Assymetrical service</p>
+                <p>Bandwidth scaling from 10 Mpbs to 1000 Mbps</p>
+                <p>24/7 specialized help desk</p>
+                <p>IPv4 or IPv6 support</p>
+                <p>Unmatched coverage</p>
+            </div>
+
+        </div>
+        <div class="col-lg-5">
+            <div class="">
+
+                <div class="card-body ">
+                    <img
+                        src="https://images.unsplash.com/photo-1606904825846-647eb07f5be2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row first">
+        <div class="col-lg-5">
+            <div class="">
+
+                <div class="card-body ">
+                    <img
+                        src="https://images.unsplash.com/photo-1547658718-1cdaa0852790?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=450&q=70">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-5 border">
+            <div class="card-body body">
+                <p>A reliable and fast connection that lets you focus on expanding your business.</p>
+                <p>We use all of our infrastructure and our partners' to go wherever you need.</p>
+                <p>Service Level Agreement with 99.5% to 99.99% availability using redundant links with diverse
+                    infrastructure</p>
+                <p>24/7 multilingual support through our Costumer Service Center and a web-based ticketing portal</p>
+                <p>Express and standardized quotation process supported by Atis telcom powerful real-time platform</p>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
 <app-footer></app-footer>
