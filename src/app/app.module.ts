@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxNavbarModule } from 'ngx-bootstrap-navbar';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+ import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { FibreComponent } from './fibre/fibre.component';
@@ -109,6 +111,8 @@ const appRoutes : Routes = [
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    NgxNavbarModule,
     FontAwesomeModule,
     FormsModule,
     NgbModule,

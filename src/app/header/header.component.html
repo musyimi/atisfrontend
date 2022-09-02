@@ -1,4 +1,4 @@
- <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
+ <!-- <nav class="navbar navbar-dark bg-primary navbar-expand-lg ">
     <div class="container-fluid">
       <a class="navbar-brand" routerLink="/">Atis Telcom</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,5 +46,68 @@
        
       </div>
     </div>
-</nav> 
+</nav>  -->
 
+<nav ngxNavbarDynamicExpand class="navbar-light bg-primary">
+  <div class="container-fluid links">
+    <a class="navbar-brand links" routerLink="/">Atis Telcom</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="collapse.toggle()"
+      aria-controls="main-nav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span
+        class="
+          navbar-toggler-icon
+          d-flex
+          align-items-center
+          justify-content-center
+        "
+      >
+      </span>
+    </button>
+    <ngx-navbar-collapse id="main-nav" #collapse="ngxNavbarCollapse">
+      <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+        <li class="nav-item" >
+          <a class="nav-link links"  routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link links" routerLink="/about"  routerLinkActive="active">About</a>
+        </li>
+        <li ngbDropdown class="nav-item dropdown links">
+          <a ngbDropdownToggle class="nav-link dropdown-toggle links"  routerLinkActive="active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul ngbDropdownMenu class="dropdown-menu" >
+            <li><a ngbDropdownItem class="dropdown-item" routerLink="/dedicatedinternetaccess">Dedicated Internet Access</a></li>
+            <li><a ngbDropdownItem class="dropdown-item" routerLink="/ethernet">Ethernet Access</a></li>
+            <li><a ngbDropdownItem class="dropdown-item" routerLink="/edge">Edge SD-WAN</a></li>
+            <li><a ngbDropdownItem class="dropdown-item" routerLink="/broadband">Broadband Internet Access</a></li>
+            <li><a ngbDropdownItem class="dropdown-item" routerLink="/dedicatedcloudconnection">Dedicated Cloud Connection</a></li>
+            <li><a ngbDropdownItem class="dropdown-item" routerLink="/hybriddynamics">Hybrid Dynamic Networks</a></li>
+            <li><a ngbDropdownItem class="dropdown-item" routerLink="/wildix">Wildix</a></li>
+            <li><a ngbDropdownItem class="dropdown-item" routerLink="/customerpremises">Customer Premises Equipment</a></li>
+            <li><a ngbDropdownItem class="dropdown-item" routerLink="/fieldservice">Field Service</a></li>
+ 
+          </ul>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link links" routerLink="/fibre"  routerLinkActive="active">Fibre</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link links" routerLink="/contactus"  routerLinkActive="active">Contact Us</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link links" routerLink="/login"  routerLinkActive="active">Login</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link links" routerLink="/getconnected"  routerLinkActive="active">Connect</a>
+        </li>
+       
+      </ul>
+    </ngx-navbar-collapse>
+  </div>
+</nav>

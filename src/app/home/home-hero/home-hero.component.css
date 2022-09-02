@@ -6,6 +6,15 @@
     margin-left: 50px;
     color: beige;
 }
+.image {
+    height: 500px;
+}
+
+@media (max-width: 320px) {
+   .image {
+    height: 50vh;
+   }
+}
 
 
 @media (max-width: 768px) {
