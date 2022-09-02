@@ -8,3 +8,10 @@
 .top {
     margin-top: 20px;
 }
+@media (max-width: 320px) {
+    .hero {
+        font-size: 18px;
+        margin-left: 5px;
+        top: 70px;
+    }
+}

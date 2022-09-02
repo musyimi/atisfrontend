@@ -54,6 +54,35 @@
 .body p{
     margin-top: 35px;
 }
+@media( max-width: 320px) {
+    .tank {
+        padding: 20px;
+    }
+    .sub1 {
+        font-size: 18px;
+    }
+    .sub2 {
+        font-weight: lighter;
+    }
+    .body {
+        padding: 5px;
+    }
+    .img1 {
+        margin-top: 20px;
+        width: 300px;
+    }
+    .img2 {
+        width: 300px;
+        height: 400px;
+    }
+    .body1 {
+        margin-top: 20px;
+        font-weight: lighter;
+    }
+    .body2 {
+        padding: 10px;
+    }
+}
 @media (max-width: 768px) {
     .title {
         font-size: 40px;

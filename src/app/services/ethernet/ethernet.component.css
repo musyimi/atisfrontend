@@ -80,6 +80,36 @@
     }
  
 }
+@media (max-width: 320px) {
+    .hero {
+        font-size: 50px;
+    }
+    .sub1 {
+        font-size: 18px;
+    }
+    .sub2 {
+       font-weight: lighter;
+    }
+    .tank {
+        padding: 20px;
+    }
+    .body {
+        padding: 15px;
+    }
+    .body p {
+        margin-top: 25px;
+    }
+    .img1 {
+        margin-top: 25px;
+        width: 300px;
+        height: 350px;
+    }
+    .img2 {
+        width: 300px;
+        height: 350px;
+    }
+    
+}
 @media (max-width: 375px) {
     .title {
         font-size: 25px;
